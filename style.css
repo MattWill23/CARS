@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height:100vh;
+    color:#0f172a;
+
+    /* YOUR BACKGROUND IMAGE */
+    background-image: url("https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-4.1.0&rect=13%2C0%2C2989%2C1994&q=50&auto=format&w=768&h=512&fit=crop&dpr=2");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* DARK OVERLAY so text/cards stay readable */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,0.65); /* soft military haze overlay */
+
+    pointer-events:none;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:rgba(255,255,255,0.85);
+    border-bottom:2px solid #e2e8f0;
+    position:relative;
+}
+
+header h1{
+    font-size:2.6rem;
+    letter-spacing:2px;
+    color:#0f172a;
+}
+
+header p{
+    margin-top:8px;
+    color:#475569;
+}
+
+/* VIEWER */
+.viewer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    position:relative;
+}
+
+/* CARD (clean intel panel) */
+.card{
+    width:450px;
+    background:rgba(255,255,255,0.95);
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-bottom:1px solid #e2e8f0;
+}
+
+/* TITLE */
+.card h2{
+    padding:12px 10px 4px;
+    text-align:center;
+}
+
+/* ROLE */
+.role{
+    text-align:center;
+    color:#64748b;
+    font-size:0.9rem;
+    margin-bottom:12px;
+}
+
+/* STATS */
+.stats{
+    padding:0 16px 18px;
+}
+
+.stat{
+    margin-bottom:12px;
+}
+
+.stat span{
+    font-size:0.85rem;
+    color:#334155;
+}
+
+/* BAR */
+.bar{
+    height:10px;
+    background:#e2e8f0;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+.bar div{
+    height:100%;
+    background:linear-gradient(90deg, #38bdf8, #0ea5e9);
+}
+
+/* BUTTONS */
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    padding:25px;
+    position:relative;
+}
+
+button{
+    padding:10px 18px;
+    border-radius:6px;
+
+    border:1px solid #cbd5e1;
+    background:#ffffff;
+
+    color:#0f172a;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#f1f5f9;
+}

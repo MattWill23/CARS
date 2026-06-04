@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✈️ AIRCRAFT VIEWER</h1>
+    <p>Use buttons (JS later) to switch aircraft</p>
+</header>
+
+<main class="viewer">
+
+    <!-- SINGLE DISPLAY CARD -->
+    <div class="card active" id="aircraft-card">
+
+        <img src="f-22raptor.png" alt="F-22 Raptor">
+
+        <h2>F-22 Raptor</h2>
+        <p class="role">Air Superiority Stealth Fighter</p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span>Speed</span>
+                <div class="bar"><div style="width:95%"></div></div>
+            </div>
+
+            <div class="stat">
+                <span>Stealth</span>
+                <div class="bar"><div style="width:100%"></div></div>
+            </div>
+
+            <div class="stat">
+                <span>Attack</span>
+                <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="stat">
+                <span>Range</span>
+                <div class="bar"><div style="width:75%"></div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- BUTTONS FOR FUTURE JS SWITCHING -->
+<div class="controls">
+    <button>⬅ Prev</button>
+    <button>Next ➡</button>
+</div>
+
+</body>
+</html>
